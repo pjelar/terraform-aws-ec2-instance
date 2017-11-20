@@ -117,7 +117,7 @@ variable "root_block_device" {
 
 variable "ebs_block_device" {
   description = "Additional EBS block devices to attach to the instance"
-  default     = []
+  default     = {}
 }
 
 variable "ephemeral_block_device" {

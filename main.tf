@@ -21,7 +21,7 @@ resource "aws_instance" "this" {
   ebs_optimized          = "${var.ebs_optimized}"
   volume_tags            = "${var.volume_tags}"
   root_block_device      = "${var.root_block_device}"
-  ebs_block_device       = "${var.ebs_block_device}"
+  ebs_block_device       = "${var.ebs_block_device_map}"
   ephemeral_block_device = "${var.ephemeral_block_device}"
 
   source_dest_check                    = "${var.source_dest_check}"

@@ -116,9 +116,8 @@ variable "root_block_device" {
 }
 
 variable "ebs_block_device" {
-  type = "map"
   description = "Additional EBS block devices to attach to the instance"
-  default     = {}
+  default     = []
 }
 
 variable "ebs_block_device_map" {

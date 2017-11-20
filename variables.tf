@@ -116,7 +116,7 @@ variable "root_block_device" {
 }
 
 variable "ebs_block_device" {
-  type = string
+  type = "string"
   description = "Additional EBS block devices to attach to the instance"
   default     = {}
 }

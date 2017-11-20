@@ -121,6 +121,12 @@ variable "ebs_block_device" {
   default     = {}
 }
 
+variable "ebs_block_device_map" {
+  type = "map"
+  description = "Additional EBS block devices to attach to the instance"
+  default     = {}
+}
+
 variable "ephemeral_block_device" {
   description = "Customize Ephemeral (also known as Instance Store) volumes on the instance"
   default     = []
